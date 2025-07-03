@@ -3,6 +3,7 @@ import { FeaturesSection } from "@/components/FeaturesSection";
 import { SymptomsSection } from "@/components/SymptomsSection";
 import { DiagnosisSection } from "@/components/DiagnosisSection";
 import { AboutSection } from "@/components/AboutSection";
+import { WhatsAppDemoSection } from "@/components/WhatsAppDemoSection";
 
 const Index = () => {
   const handleCtaClick = () => {
@@ -17,6 +18,7 @@ const Index = () => {
       <SymptomsSection onCtaClick={handleCtaClick} />
       <DiagnosisSection onCtaClick={handleCtaClick} />
       <AboutSection onCtaClick={handleCtaClick} />
+      <WhatsAppDemoSection onCtaClick={handleCtaClick} />
     </div>
   );
 };
