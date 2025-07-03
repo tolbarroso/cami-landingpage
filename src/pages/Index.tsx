@@ -4,11 +4,15 @@ import { SymptomsSection } from "@/components/SymptomsSection";
 import { DiagnosisSection } from "@/components/DiagnosisSection";
 import { AboutSection } from "@/components/AboutSection";
 import { WhatsAppDemoSection } from "@/components/WhatsAppDemoSection";
+import { FormSection } from "@/components/FormSection";
 
 const Index = () => {
   const handleCtaClick = () => {
-    // You can add any action here, like opening a modal or redirecting
-    console.log("CTA clicked");
+    // Scroll to form section
+    const formSection = document.getElementById('form-section');
+    if (formSection) {
+      formSection.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -19,6 +23,7 @@ const Index = () => {
       <DiagnosisSection onCtaClick={handleCtaClick} />
       <AboutSection onCtaClick={handleCtaClick} />
       <WhatsAppDemoSection onCtaClick={handleCtaClick} />
+      <FormSection id="form-section" />
     </div>
   );
 };
