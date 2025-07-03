@@ -115,7 +115,7 @@ export const WhatsAppDemoSection = ({ onCtaClick }: WhatsAppDemoSectionProps) =>
                     </div>
                   ))}
                 </div>
-                <p className="text-xs text-gray-500 mt-2">10:49</p>
+                <p className="text-xs text-gray-500 mt-2">12:07</p>
               </div>
             </div>
 
@@ -124,7 +124,7 @@ export const WhatsAppDemoSection = ({ onCtaClick }: WhatsAppDemoSectionProps) =>
                 <p className="text-sm leading-relaxed">
                   Se quiser trocar ideia mais a fundo sobre posicionamento, marketing e dar um up nesse conteúdo... vou deixar aqui o contato de um consultor gente boa do meu time. Ele pode ajudar você a transformar essa presença em vendas reais.
                 </p>
-                <p className="text-xs text-gray-500 mt-2">10:49</p>
+                <p className="text-xs text-gray-500 mt-2">12:07</p>
               </div>
             </div>
           </div>
