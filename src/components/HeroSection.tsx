@@ -31,7 +31,7 @@ export const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
         {/* Left Content with enhanced lighting */}
         <div className="lg:w-1/2 space-y-8 relative">
           {/* Text background glow */}
-          <div className="absolute -inset-8 bg-gradient-to-r from-primary/10 via-primary-glow/5 to-transparent rounded-3xl blur-2xl"></div>
+          <div className="absolute -inset-12 bg-gradient-to-br from-primary/20 via-primary-glow/15 to-accent/10 rounded-[3rem] blur-3xl opacity-80"></div>
           
           <div className="relative z-10">
             <img 
