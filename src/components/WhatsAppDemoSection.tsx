@@ -7,37 +7,42 @@ interface WhatsAppDemoSectionProps {
 
 export const WhatsAppDemoSection = ({ onCtaClick }: WhatsAppDemoSectionProps) => {
   const messages = [
-    {
-      type: "user",
-      text: "olá! meu perfil é @clientesdealtovalor",
-      time: "10:48"
-    },
-    {
-      type: "cami",
-      text: "Oi, Cami na área. Já fiz um RAIO X do seu perfil @clientesdealtovalor, vou te mandar agora!",
-      time: "10:49"
-    },
-    {
-      type: "cami",
-      text: "Olha só, você tá com uma pegada forte em high ticket e ofertas premium, o que é ótimo porque esse mercado é quente e tem muito valor pra explorar.",
-      time: "10:49"
-    },
-    {
-      type: "cami",
-      text: "Mas vamos ser sinceros: seu conteúdo tem autoridade, mas falta aquele toque de conexão real. Você fala direto pro público certo, mas o engajamento não tá lá essas coisas — parece que a galera até vê, mas não sente vontade de interagir.",
-      time: "10:49"
-    },
-    {
-      type: "cami",
-      text: "Visualmente o feed é meio bagunçado e sem padrão definido. Isso cansa quem chega pela primeira vez. Se quer ser referência em alto valor, precisa ter uma identidade visual que grite isso logo de cara.",
-      time: "10:49"
-    },
-    {
-      type: "cami",
-      text: "Você posta bastante vídeo longo (IGTV), o que é bom pra aprofundar temas complexos como vendas high ticket. Só que esses vídeos têm visual pouco atraente e pouca chamada para ação clara. Resultado? Visualizações razoáveis e poucos comentários.",
-      time: "10:49"
-    }
-  ];
+  {
+    type: "user",
+    text: "meu perfil é @willsmith",
+    time: "12:06"
+  },
+  {
+    type: "cami",
+    text: "Oi, Cami na área. Já fiz um RAIO X do perfil @willsmith, bora lá!",
+    time: "12:06"
+  },
+  {
+    type: "cami",
+    text: "Esse perfil é o que eu chamo de presença de peso no Instagram. Com quase 70 milhões de seguidores e verificado, Will Smith tem autoridade natural — não precisa provar nada pra ninguém.",
+    time: "12:07"
+  },
+  {
+    type: "cami",
+    text: "O conteúdo é uma mistura bem equilibrada entre vida pessoal, projetos profissionais e bastidores da carreira. Isso cria uma conexão real com a audiência, mostrando que ele é gente como a gente, mas com aquele brilho de estrela.",
+    time: "12:07"
+  },
+  {
+    type: "cami",
+    text: "Ele usa muito vídeo — IGTV e reels — para contar histórias, divulgar trabalhos como “Bel-Air” e outros projetos musicais. Os vídeos têm alto engajamento: centenas de milhares até milhões de visualizações e likes.",
+    time: "12:07"
+  },
+  {
+    type: "cami",
+    text: "Visualmente o feed é variado mas mantém uma linha coerente: fotos profissionais misturadas com momentos descontraídos. A bio é simples, direta e tem link estratégico para outras redes/projetos.",
+    time: "12:07"
+  },
+  {
+    type: "cami",
+    text: "O tom dele é autêntico, leve e inspirador. Ele não força ser perfeito nem guru; fala da vida real com humor e sabedoria.",
+    time: "12:07"
+  }
+];
 
   const actionItems = [
     "Organiza seu feed com uma estética consistente: cores, fontes e estilo visual alinhados.",
