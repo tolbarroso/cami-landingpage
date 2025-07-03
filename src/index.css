@@ -121,4 +121,18 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+  
+  /* Hero background responsive */
+  .hero-background {
+    background-image: url('/lovable-uploads/faa1b728-b14d-47d0-9513-98bce2764403.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-background {
+      background-image: url('/HeroBackGround.png');
+    }
+  }
 }
