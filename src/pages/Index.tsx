@@ -1,5 +1,4 @@
 import { HeroSection } from "@/components/HeroSection";
-import { FeaturesSection } from "@/components/FeaturesSection";
 import { SymptomsSection } from "@/components/SymptomsSection";
 import { DiagnosisSection } from "@/components/DiagnosisSection";
 import { AboutSection } from "@/components/AboutSection";
@@ -18,7 +17,6 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <HeroSection onCtaClick={handleCtaClick} />
-      <FeaturesSection onCtaClick={handleCtaClick} />
       <SymptomsSection onCtaClick={handleCtaClick} />
       <DiagnosisSection onCtaClick={handleCtaClick} />
       <AboutSection onCtaClick={handleCtaClick} />
