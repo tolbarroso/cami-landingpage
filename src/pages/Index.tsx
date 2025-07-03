@@ -17,8 +17,8 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <HeroSection onCtaClick={handleCtaClick} />
-      <SymptomsSection onCtaClick={handleCtaClick} />
       <DiagnosisSection onCtaClick={handleCtaClick} />
+      <SymptomsSection onCtaClick={handleCtaClick} />
       <AboutSection onCtaClick={handleCtaClick} />
       <WhatsAppDemoSection onCtaClick={handleCtaClick} />
       <FormSection id="form-section" />
