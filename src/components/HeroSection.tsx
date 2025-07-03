@@ -50,23 +50,10 @@ export const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
         <div className="lg:w-1/2 flex justify-center lg:justify-end mt-8 lg:mt-0">
           <div className="relative">
             <img 
-              src="/lovable-uploads/7264d9c5-7309-454d-a833-6853f047606c.png"
+              src="/lovable-uploads/863bdc97-39d1-4092-9f31-86ad7d4eadbc.png"
               alt="Cami - Especialista em Instagram"
               className="w-80 lg:w-96 h-auto object-contain drop-shadow-2xl"
             />
-            
-            {/* Floating testimonials/notifications */}
-            <div className="absolute top-20 -left-10 bg-black/20 backdrop-blur-sm rounded-lg p-3 text-sm max-w-60 border border-white/20">
-              <p className="font-medium">Casal trealizando Juntos NÃO ESTÁ ENTREGANDO A CHAVE ELE ESTÁ ENTREGANDO A PORTA ABERTA PARA VCS 😍</p>
-            </div>
-            
-            <div className="absolute top-60 -right-10 bg-black/20 backdrop-blur-sm rounded-lg p-3 text-sm max-w-60 border border-white/20">
-              <p className="font-medium">Meire Schueller Chocada com a qualidade das informações. Tudo baseado em dados e não bla bla bla. Arrasou!</p>
-            </div>
-            
-            <div className="absolute bottom-40 -left-8 bg-black/20 backdrop-blur-sm rounded-lg p-3 text-sm max-w-60 border border-white/20">
-              <p className="font-medium">Juliana Ribeiro Mudou minha gestão de clientes</p>
-            </div>
           </div>
         </div>
       </div>
