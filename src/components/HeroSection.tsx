@@ -1,21 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import perfilCheckLogo from "@/assets/perfil-check-logo.png";
-
 interface HeroSectionProps {
   onCtaClick: () => void;
 }
-
-export const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
+export const HeroSection = ({
+  onCtaClick
+}: HeroSectionProps) => {
   const scrollToNext = () => {
     window.scrollTo({
       top: window.innerHeight,
       behavior: 'smooth'
     });
   };
-
-  return (
-    <section className="min-h-screen bg-gradient-hero text-white relative overflow-hidden">
+  return <section className="min-h-screen bg-gradient-hero text-white relative overflow-hidden">
       {/* Dynamic background elements */}
       <div className="absolute inset-0">
         {/* Primary gradient overlays */}
@@ -31,14 +29,10 @@ export const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
         {/* Left Content with enhanced lighting */}
         <div className="lg:w-1/2 space-y-8 relative">
           {/* Text background glow */}
-          <div className="absolute -inset-12 bg-gradient-to-br from-primary/20 via-primary-glow/15 to-accent/10 rounded-[3rem] blur-3xl opacity-80"></div>
+          <div className="absolute -inset-12 bg-gradient-to-br from-[#1D3557]/20 via-[#457B9D]/15 to-[#A8DADC]/10 rounded-[3rem] blur-3xl opacity-80"></div>
           
           <div className="relative z-10">
-            <img 
-              src={perfilCheckLogo} 
-              alt="Perfil Check" 
-              className="h-16 w-auto drop-shadow-lg"
-            />
+            <img src={perfilCheckLogo} alt="Perfil Check" className="h-16 w-auto drop-shadow-lg" />
             
             <div className="space-y-6 mt-8">
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
@@ -50,12 +44,7 @@ export const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
               </p>
             </div>
 
-            <Button 
-              variant="hero" 
-              size="lg" 
-              onClick={onCtaClick}
-              className="text-lg px-8 py-4 h-auto shadow-glow hover:shadow-elegant transition-all duration-300 mt-8 relative z-20"
-            >
+            <Button variant="hero" size="lg" onClick={onCtaClick} className="text-lg px-8 py-4 h-auto shadow-glow hover:shadow-elegant transition-all duration-300 mt-8 relative z-20">
               Quero destravar meu perfil
             </Button>
           </div>
@@ -69,14 +58,9 @@ export const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
           {/* Cami's photo with integration effects */}
           <div className="relative z-10">
             <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-xl"></div>
-            <img 
-              src="/lovable-uploads/ba429ca0-59fe-472e-96a4-65680af2f9c5.png"
-              alt="Cami - Especialista em Instagram"
-              className="w-80 lg:w-96 h-auto object-contain relative z-10 mix-blend-screen drop-shadow-2xl"
-              style={{
-                filter: 'drop-shadow(0 0 40px rgba(255, 215, 0, 0.3)) drop-shadow(0 0 80px rgba(255, 215, 0, 0.1))'
-              }}
-            />
+            <img src="/lovable-uploads/ba429ca0-59fe-472e-96a4-65680af2f9c5.png" alt="Cami - Especialista em Instagram" className="w-80 lg:w-96 h-auto object-contain relative z-10 mix-blend-screen drop-shadow-2xl" style={{
+            filter: 'drop-shadow(0 0 40px rgba(255, 215, 0, 0.3)) drop-shadow(0 0 80px rgba(255, 215, 0, 0.1))'
+          }} />
             
             {/* Additional lighting effects around Cami */}
             <div className="absolute top-1/4 -left-8 w-32 h-32 bg-primary-glow/40 rounded-full blur-2xl animate-pulse delay-500"></div>
@@ -87,13 +71,9 @@ export const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center">
-        <button 
-          onClick={scrollToNext}
-          className="text-white/70 hover:text-white transition-colors animate-bounce"
-        >
+        <button onClick={scrollToNext} className="text-white/70 hover:text-white transition-colors animate-bounce">
           <ChevronDown size={32} />
         </button>
       </div>
-    </section>
-  );
+    </section>;
 };
