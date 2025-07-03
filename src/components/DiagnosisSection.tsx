@@ -21,83 +21,73 @@ export const DiagnosisSection = ({ onCtaClick }: DiagnosisSectionProps) => {
     },
     {
       icon: Zap,
-      title: "Apontar soluções personalizadas",
+      title: "Apontar soluções personalizadas para você aplicar imediatamente",
       description: "Estratégias específicas para o seu nicho e audiência"
     }
   ];
 
   const checkpoints = [
-    "Você não precisa entender nada sobre IA, a ferramenta faz o trabalho por você.",
-    "O Perfil Check pode ser usado na versão gratuita ou paga do Chat GPT."
+    "Você não precisa entender nada sobre IA, a ferramenta faz o trabalho por você",
+    "O Perfil Check pode ser usado na versão gratuita ou paga do Chat GPT"
   ];
 
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl lg:text-5xl font-bold text-foreground leading-tight mb-8">
+            Encontre em poucos minutos as respostas{" "}
+            <span className="text-primary">que você procura há muito tempo.</span>
+          </h2>
+          
+          <div className="max-w-4xl mx-auto space-y-6">
+            <p className="text-lg text-muted-foreground">
+              O <strong>Perfil Check</strong> não é um curso ou treinamento. Ele é uma ferramenta de Inteligência Artificial.
+            </p>
+            
+            <p className="text-lg text-muted-foreground">
+              Um <span className="text-primary font-semibold">Agente GPT</span> que funciona como um "consultor digital", pronto para:
+            </p>
+          </div>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8">
-            <div className="space-y-6">
-              <h2 className="text-3xl lg:text-5xl font-bold text-foreground leading-tight">
-                Encontre em poucos minutos as respostas{" "}
-                <span className="text-primary">que você procura há muito tempo.</span>
-              </h2>
-              
-              <p className="text-lg text-muted-foreground">
-                O <strong>Perfil Check</strong> não é um curso ou treinamento. Ele é uma ferramenta de Inteligência Artificial.
-              </p>
-              
-              <p className="text-lg text-muted-foreground">
-                Um <span className="text-primary font-semibold">Agente GPT</span> que funciona como um "consultor digital", pronto para:
-              </p>
-            </div>
-
-            {/* Features */}
+            {/* Features as bullet points */}
             <div className="space-y-4">
-              {features.map((feature, index) => {
-                const IconComponent = feature.icon;
-                return (
-                  <Card key={index} className="border-l-4 border-l-primary bg-gradient-to-r from-primary/5 to-transparent hover:shadow-elegant transition-all duration-300">
-                    <CardContent className="p-6">
-                      <div className="flex items-start gap-4">
-                        <div className="flex-shrink-0 w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                          <IconComponent className="w-6 h-6 text-primary-foreground" />
-                        </div>
-                        <div>
-                          <h3 className="text-lg font-bold text-foreground mb-2">
-                            {feature.title}
-                          </h3>
-                          <p className="text-muted-foreground">
-                            {feature.description}
-                          </p>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                );
-              })}
+              {features.map((feature, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-foreground mb-1">
+                      {feature.title}
+                    </h3>
+                  </div>
+                </div>
+              ))}
             </div>
 
-            {/* Checkpoints */}
-            <div className="bg-muted/50 rounded-2xl p-6 space-y-4">
+            {/* Checkpoints in a card */}
+            <div className="bg-muted/30 rounded-2xl p-6 space-y-4">
               {checkpoints.map((checkpoint, index) => (
                 <div key={index} className="flex items-start gap-3">
-                  <div className="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-0.5">
-                    <Check className="w-4 h-4 text-white" />
-                  </div>
+                  <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
                   <p className="text-foreground leading-relaxed">{checkpoint}</p>
                 </div>
               ))}
             </div>
 
-            <Button 
-              variant="cta" 
-              size="lg" 
-              onClick={onCtaClick}
-              className="px-8 py-4 h-auto shadow-elegant hover:shadow-glow transition-all duration-300"
-            >
-              Quero destravar meu perfil
-            </Button>
+            <div className="text-center lg:text-left">
+              <Button 
+                variant="cta" 
+                size="lg" 
+                onClick={onCtaClick}
+                className="px-8 py-4 h-auto shadow-elegant hover:shadow-glow transition-all duration-300"
+              >
+                Quero destravar meu perfil
+              </Button>
+            </div>
           </div>
 
           {/* Right Content - Laptop Mockup */}
