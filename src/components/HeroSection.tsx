@@ -18,16 +18,6 @@ export const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
       className="min-h-screen bg-cover bg-center text-white relative overflow-hidden"
       style={{ backgroundImage: "url('/HeroBackGround.png')" }}
     >
-      {/* Optional dark overlay for text readability */}
-      <div className="absolute inset-0 bg-black/40 z-0"></div>
-
-      {/* Dynamic background lighting elements (preserved) */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/20 via-transparent to-accent/20"></div>
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-primary/30 blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full bg-accent/40 blur-2xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-0 w-1/2 h-1/2 bg-gradient-radial from-primary-glow/20 via-transparent to-transparent blur-xl"></div>
-      </div>
 
       {/* Main content container */}
       <div className="container mx-auto px-4 py-16 flex flex-col lg:flex-row items-center justify-between min-h-screen relative z-10">
