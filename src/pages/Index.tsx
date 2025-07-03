@@ -1,12 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { HeroSection } from "@/components/HeroSection";
+import { FeaturesSection } from "@/components/FeaturesSection";
+import { SymptomsSection } from "@/components/SymptomsSection";
+import { DiagnosisSection } from "@/components/DiagnosisSection";
+import { AboutSection } from "@/components/AboutSection";
+import { FormSection } from "@/components/FormSection";
 
 const Index = () => {
+  const scrollToForm = () => {
+    const formSection = document.getElementById('form-section');
+    if (formSection) {
+      formSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <HeroSection onCtaClick={scrollToForm} />
+      <FeaturesSection onCtaClick={scrollToForm} />
+      <SymptomsSection onCtaClick={scrollToForm} />
+      <DiagnosisSection onCtaClick={scrollToForm} />
+      <AboutSection onCtaClick={scrollToForm} />
+      <FormSection />
     </div>
   );
 };
