@@ -32,44 +32,9 @@ git clone https://github.com/seu-usuario/cami-landingpage.git
 cd cami-landingpage
 npm install
 npm run dev
-
----
-
-## ✨ Funcionalidades
-
-- Análise inteligente com IA + estratégia  
-- Identificação de gargalos de crescimento  
-- Interface leve e responsiva  
-- Formulário completo com coleta de dados  
-- Avatar interativo da Cami explicando o processo  
-- Visual atraente com foco em conversão  
-
----
-
-## 🛠 Tecnologias utilizadas
-
-- **React**
-- **TypeScript**
-- **Tailwind CSS**
-- **shadcn/ui**
-- **Vite**
-
----
-
-## 🧑‍💻 Como rodar localmente
-
-Clone este repositório e instale as dependências:
-
-```bash
-git clone https://github.com/seu-usuario/cami-landingpage.git
-cd cami-landingpage
-npm install
-npm run dev
 ```
 
 Acesse em: [http://localhost:5173](http://localhost:5173)
-
----
 
 ## 🚀 Deploy
 
@@ -81,8 +46,6 @@ Para publicar seu próprio fork:
 2. Conecte o repositório
 3. (Opcional) Aponte seu domínio personalizado
 
----
-
 ## 📝 Customização
 
 Você pode alterar facilmente:
@@ -91,8 +54,6 @@ Você pode alterar facilmente:
 - A imagem de fundo: `/public/HeroBackGround.png`
 - O OG Image para redes sociais: `/public/opengraph-cami.png`
 - O título da página e metatags em: `/index.html`
-
----
 
 ## 📌 Créditos
 
