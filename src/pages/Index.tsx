@@ -3,27 +3,20 @@ import { FeaturesSection } from "@/components/FeaturesSection";
 import { SymptomsSection } from "@/components/SymptomsSection";
 import { DiagnosisSection } from "@/components/DiagnosisSection";
 import { AboutSection } from "@/components/AboutSection";
-import { FormSection } from "@/components/FormSection";
 
 const Index = () => {
-  const scrollToForm = () => {
-    const formSection = document.getElementById('form-section');
-    if (formSection) {
-      formSection.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
+  const handleCtaClick = () => {
+    // You can add any action here, like opening a modal or redirecting
+    console.log("CTA clicked");
   };
 
   return (
     <div className="min-h-screen">
-      <HeroSection onCtaClick={scrollToForm} />
-      <FeaturesSection onCtaClick={scrollToForm} />
-      <SymptomsSection onCtaClick={scrollToForm} />
-      <DiagnosisSection onCtaClick={scrollToForm} />
-      <AboutSection onCtaClick={scrollToForm} />
-      <FormSection />
+      <HeroSection onCtaClick={handleCtaClick} />
+      <FeaturesSection onCtaClick={handleCtaClick} />
+      <SymptomsSection onCtaClick={handleCtaClick} />
+      <DiagnosisSection onCtaClick={handleCtaClick} />
+      <AboutSection onCtaClick={handleCtaClick} />
     </div>
   );
 };

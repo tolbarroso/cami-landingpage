@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import camiProfile from "@/assets/cami-profile.png";
+// Using the real Cami photo from upload
 
 interface AboutSectionProps {
   onCtaClick: () => void;
@@ -23,7 +23,7 @@ export const AboutSection = ({ onCtaClick }: AboutSectionProps) => {
           <div className="lg:flex items-center gap-12">
             <div className="lg:w-1/3 text-center mb-8 lg:mb-0">
               <img 
-                src={camiProfile}
+                src="/lovable-uploads/7264d9c5-7309-454d-a833-6853f047606c.png"
                 alt="Cami - Especialista em Instagram"
                 className="w-80 h-auto mx-auto rounded-3xl shadow-elegant"
               />

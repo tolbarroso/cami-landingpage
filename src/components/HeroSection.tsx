@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import perfilCheckLogo from "@/assets/perfil-check-logo.png";
-import camiProfile from "@/assets/cami-profile.png";
+// Using the real Cami photo from upload
 
 interface HeroSectionProps {
   onCtaClick: () => void;
@@ -50,7 +50,7 @@ export const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
         <div className="lg:w-1/2 flex justify-center lg:justify-end mt-8 lg:mt-0">
           <div className="relative">
             <img 
-              src={camiProfile}
+              src="/lovable-uploads/7264d9c5-7309-454d-a833-6853f047606c.png"
               alt="Cami - Especialista em Instagram"
               className="w-80 lg:w-96 h-auto object-contain drop-shadow-2xl"
             />
