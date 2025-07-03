@@ -68,7 +68,8 @@ export default {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-card': 'var(--gradient-card)',
-				'gradient-symptoms': 'var(--gradient-symptoms)'
+				'gradient-symptoms': 'var(--gradient-symptoms)',
+				'gradient-radial': 'radial-gradient(ellipse at center, var(--tw-gradient-stops))'
 			},
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',
