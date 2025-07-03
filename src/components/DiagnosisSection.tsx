@@ -9,46 +9,47 @@ interface DiagnosisSectionProps {
 
 export const DiagnosisSection = ({ onCtaClick }: DiagnosisSectionProps) => {
   const features = [
-    {
-      icon: BarChart3,
-      title: "Analisar os dados do seu perfil no Instagram",
-      description: "IA avançada examina cada aspecto do seu perfil"
-    },
-    {
-      icon: Target,
-      title: "Fornecer um diagnóstico completo e detalhado",
-      description: "Relatório personalizado com insights acionáveis"
-    },
-    {
-      icon: Zap,
-      title: "Apontar soluções personalizadas para você aplicar imediatamente",
-      description: "Estratégias específicas para o seu nicho e audiência"
-    }
-  ];
+  {
+    icon: BarChart3,
+    title: "Identificar gargalos no seu conteúdo e posicionamento",
+    description: "Da bio ao feed: descubra o que confunde, repele ou trava sua audiência."
+  },
+  {
+    icon: Target,
+    title: "Fornecer um diagnóstico claro e direto ao ponto",
+    description: "Sem enrolação — veja onde estão os erros e por que seu crescimento estagnou."
+  },
+  {
+    icon: Zap,
+    title: "Apontar soluções estratégicas para aplicar agora",
+    description: "Receba orientações específicas para o seu perfil, nicho e momento."
+  }
+];
 
   const checkpoints = [
-    "Você não precisa entender nada sobre IA, a ferramenta faz o trabalho por você",
-    "O Perfil Check pode ser usado na versão gratuita ou paga do Chat GPT"
-  ];
+  "Não precisa entender de IA ou algoritmo — a análise faz o trabalho por você",
+  "Funciona com qualquer tipo de perfil: criadores, marcas, infoprodutores e experts"
+];
 
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-5xl font-bold text-foreground leading-tight mb-8">
-            Encontre em poucos minutos as respostas{" "}
-            <span className="text-primary">que você procura há muito tempo.</span>
+            Pare de tentar crescer no escuro.
+            <span className="text-primary"> Descubra o que está travando o seu Instagram — e como corrigir.</span>
           </h2>
           
           <div className="max-w-4xl mx-auto space-y-6">
-            <p className="text-lg text-muted-foreground">
-              O <strong>Perfil Check</strong> não é um curso ou treinamento. Ele é uma ferramenta de Inteligência Artificial.
-            </p>
+  <p className="text-lg text-muted-foreground">
+    Isso não é um curso, nem mais uma fórmula mágica.
+    É um diagnóstico estratégico feito com base em dados reais e inteligência artificial.
+  </p>
             
             <p className="text-lg text-muted-foreground">
-              Um <span className="text-primary font-semibold">Agente GPT</span> que funciona como um "consultor digital", pronto para:
-            </p>
-          </div>
+    Você recebe uma análise clara, direta e aplicável — do jeito que você precisa para destravar seu perfil.
+  </p>
+</div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
