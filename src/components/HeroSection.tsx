@@ -14,22 +14,21 @@ export const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
   };
 
   return (
-    <section
-      className="min-h-screen bg-cover bg-center text-white relative overflow-hidden"
-      style={{ backgroundImage: "url('/HeroBackGround.png')" }}
-    >
+    <section className="min-h-screen text-white relative overflow-hidden hero-background">
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/20"></div>
 
       {/* Main content container */}
       <div className="container mx-auto px-4 py-16 flex flex-col lg:flex-row items-center justify-between min-h-screen relative z-10">
         {/* Left side content (text + CTA) */}
         <div className="lg:w-1/2 space-y-8 relative">
           {/* Decorative blurred light behind text */}
-          <div className="absolute -inset-12 bg-gradient-to-br from-[#1D3557]/20 via-[#457B9D]/15 to-[#A8DADC]/10 rounded-[3rem] blur-3xl opacity-80"></div>
+          <div className="absolute -inset-8 lg:-inset-12 bg-gradient-to-br from-[#1D3557]/30 via-[#457B9D]/20 to-[#A8DADC]/15 rounded-[2rem] lg:rounded-[3rem] blur-2xl lg:blur-3xl opacity-80"></div>
 
           <div className="relative z-10">
             {/* HEADLINE + PARAGRAPH */}
-            <div className="space-y-6 mt-8">
-              <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
+            <div className="space-y-4 mt-8">
+              <h1 className="text-2xl lg:text-6xl font-bold leading-tight text-left">
                 <span className="text-primary-glow drop-shadow-lg">
                   Seu conteúdo é bom, mas não vende?
                 </span>{" "}
@@ -37,7 +36,7 @@ export const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
                 não enxerga.
               </h1>
 
-              <p className="text-xl lg:text-2xl text-white/90 leading-relaxed drop-shadow-md">
+              <p className="text-base lg:text-2xl text-white/90 leading-relaxed drop-shadow-md text-left">
                 A Cami analisa o seu perfil com inteligência artificial e
                 estratégia para mostrar o que está travando seu crescimento e
                 como resolver.
@@ -45,14 +44,16 @@ export const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
             </div>
 
             {/* CALL TO ACTION */}
-            <Button
-              variant="hero"
-              size="lg"
-              onClick={onCtaClick}
-              className="text-lg px-8 py-4 h-auto shadow-glow hover:shadow-elegant transition-all duration-300 mt-8 relative z-20"
-            >
-              Quero destravar meu perfil
-            </Button>
+            <div className="flex justify-start mt-6">
+              <Button
+                variant="hero"
+                size="lg"
+                onClick={onCtaClick}
+                className="text-base lg:text-lg px-6 py-3 lg:px-8 lg:py-4 h-auto shadow-glow hover:shadow-elegant transition-all duration-300 relative z-20 w-full max-w-xs lg:w-auto lg:max-w-none"
+              >
+                Quero destravar meu perfil
+              </Button>
+            </div>
           </div>
         </div>
 
