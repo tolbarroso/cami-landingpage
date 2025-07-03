@@ -45,12 +45,12 @@ export const WhatsAppDemoSection = ({ onCtaClick }: WhatsAppDemoSectionProps) =>
 ];
 
   const actionItems = [
-    "Organiza seu feed com uma estética consistente: cores, fontes e estilo visual alinhados.",
-    "Use legendas mais provocativas e convide para interação direta (perguntas abertas).",
-    "Poste histórias reais de clientes que tiveram resultados expressivos com você.",
-    "Faça reels curtos com dicas rápidas para atrair atenção imediata.",
-    "Mostre bastidores da sua rotina para humanizar a marca."
-  ];
+  "Continue explorando vídeos curtos com histórias pessoais.",
+  "Use mais chamadas para ação nos posts (perguntas ou convites para comentar).",
+  "Mantenha essa autenticidade que gera identificação forte.",
+  "Explore colabs estratégicas para ampliar alcance.",
+  "Crie variações visuais sem perder identidade."
+];
 
   return (
     <section className="py-20 bg-gradient-card">
