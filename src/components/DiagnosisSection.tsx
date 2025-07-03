@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { BarChart3, Target, Zap, Check } from "lucide-react";
+import macbookMockup from "@/assets/macbook-mockup.jpg";
 
 interface DiagnosisSectionProps {
   onCtaClick: () => void;
@@ -8,81 +10,107 @@ interface DiagnosisSectionProps {
 export const DiagnosisSection = ({ onCtaClick }: DiagnosisSectionProps) => {
   const features = [
     {
-      title: "Encontre os dados",
-      description: "Saiba quais informações reunir sobre o seu perfil e onde encontrá-las de forma prática e rápida."
+      icon: BarChart3,
+      title: "Analisar os dados do seu perfil no Instagram",
+      description: "IA avançada examina cada aspecto do seu perfil"
     },
     {
-      title: "Descubra os parâmetros do seu mercado",
-      description: "Entenda se o seu perfil está abaixo, acima ou na média dos seus concorrentes."
+      icon: Target,
+      title: "Fornecer um diagnóstico completo e detalhado",
+      description: "Relatório personalizado com insights acionáveis"
     },
     {
-      title: "Diagnóstico completo com o Agente GPT",
-      description: "Um Raio-X completo, com a análise da sua frequência de postagens, alcance orgânico, engajamento, média de visualizações e qualidade dos seus conteúdos. Tudo feito pela ferramenta de IA para você receber um diagnóstico claro e direto."
-    },
-    {
-      title: "Plano de Ação Personalizado",
-      description: "Descubra os seus próximos passos imediatos para destravar o crescimento do seu perfil."
+      icon: Zap,
+      title: "Apontar soluções personalizadas",
+      description: "Estratégias específicas para o seu nicho e audiência"
     }
   ];
 
+  const checkpoints = [
+    "Você não precisa entender nada sobre IA, a ferramenta faz o trabalho por você.",
+    "O Perfil Check pode ser usado na versão gratuita ou paga do Chat GPT."
+  ];
+
   return (
-    <section className="py-20 bg-gradient-card">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-8">
-            Não ignore os sinais
-          </h2>
-          
-          <p className="text-xl text-muted-foreground mb-8">
-            Encontre a causa e resolva o problema — antes que os danos sejam maiores
-          </p>
-          
-          <div className="max-w-4xl mx-auto mb-12">
-            <p className="text-lg text-muted-foreground mb-4">
-              Esses sintomas são apenas a ponta do iceberg.
-            </p>
-            <p className="text-lg text-muted-foreground mb-4">
-              <strong>Algo mais profundo</strong> está comprometendo a saúde do seu perfil.
-            </p>
-            <p className="text-lg text-muted-foreground mb-8">
-              Assim como uma dor de cabeça pode ter diversas causas, a estagnação do seu perfil também precisa ser investigada a fundo.
-            </p>
-            <p className="text-lg text-primary font-semibold">
-              Quanto mais você adia o check-up do seu perfil, maior a chance do problema se agravar e comprometer seus resultados.
-            </p>
-          </div>
-        </div>
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
+          <div className="space-y-8">
+            <div className="space-y-6">
+              <h2 className="text-3xl lg:text-5xl font-bold text-foreground leading-tight">
+                Encontre em poucos minutos as respostas{" "}
+                <span className="text-primary">que você procura há muito tempo.</span>
+              </h2>
+              
+              <p className="text-lg text-muted-foreground">
+                O <strong>Perfil Check</strong> não é um curso ou treinamento. Ele é uma ferramenta de Inteligência Artificial.
+              </p>
+              
+              <p className="text-lg text-muted-foreground">
+                Um <span className="text-primary font-semibold">Agente GPT</span> que funciona como um "consultor digital", pronto para:
+              </p>
+            </div>
 
-        <div className="mb-16">
-          <h3 className="text-2xl lg:text-4xl font-bold text-center text-foreground mb-12">
-            Descubra qual é o problema do seu perfil com ajuda da Inteligência Artificial.
-          </h3>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            {features.map((feature, index) => (
-              <Card key={index} className="bg-white hover:shadow-elegant transition-all duration-300">
-                <CardContent className="p-8">
-                  <h4 className="text-xl font-bold text-primary mb-4">
-                    {feature.title}
-                  </h4>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {feature.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
+            {/* Features */}
+            <div className="space-y-4">
+              {features.map((feature, index) => {
+                const IconComponent = feature.icon;
+                return (
+                  <Card key={index} className="border-l-4 border-l-primary bg-gradient-to-r from-primary/5 to-transparent hover:shadow-elegant transition-all duration-300">
+                    <CardContent className="p-6">
+                      <div className="flex items-start gap-4">
+                        <div className="flex-shrink-0 w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                          <IconComponent className="w-6 h-6 text-primary-foreground" />
+                        </div>
+                        <div>
+                          <h3 className="text-lg font-bold text-foreground mb-2">
+                            {feature.title}
+                          </h3>
+                          <p className="text-muted-foreground">
+                            {feature.description}
+                          </p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                );
+              })}
+            </div>
 
-        <div className="text-center">
-          <Button 
-            variant="cta" 
-            size="lg" 
-            onClick={onCtaClick}
-            className="px-8 py-4 h-auto"
-          >
-            Iniciar meu diagnóstico
-          </Button>
+            {/* Checkpoints */}
+            <div className="bg-muted/50 rounded-2xl p-6 space-y-4">
+              {checkpoints.map((checkpoint, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-0.5">
+                    <Check className="w-4 h-4 text-white" />
+                  </div>
+                  <p className="text-foreground leading-relaxed">{checkpoint}</p>
+                </div>
+              ))}
+            </div>
+
+            <Button 
+              variant="cta" 
+              size="lg" 
+              onClick={onCtaClick}
+              className="px-8 py-4 h-auto shadow-elegant hover:shadow-glow transition-all duration-300"
+            >
+              Quero destravar meu perfil
+            </Button>
+          </div>
+
+          {/* Right Content - Laptop Mockup */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl blur-xl"></div>
+              <img 
+                src={macbookMockup}
+                alt="Dashboard de análise do Instagram"
+                className="relative z-10 w-full max-w-lg h-auto object-contain rounded-2xl shadow-elegant"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
