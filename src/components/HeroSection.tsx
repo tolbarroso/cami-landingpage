@@ -35,14 +35,14 @@ export const HeroSection = ({
             <img src={perfilCheckLogo} alt="Perfil Check" className="h-16 w-auto drop-shadow-lg" />
             
             <div className="space-y-6 mt-8">
-              <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                <span className="text-primary-glow drop-shadow-lg">O primeiro passo para o sucesso do seu perfil</span> é identificar o que está bloqueando o seu crescimento no Instagram.
-              </h1>
-              
-              <p className="text-xl lg:text-2xl text-white/90 leading-relaxed drop-shadow-md">
-                Descubra o que há de errado com o seu perfil com a ajuda da Inteligência Artificial.
-              </p>
-            </div>
+  <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
+    <span className="text-primary-glow drop-shadow-lg">Seu conteúdo é bom, mas não vende?</span> Talvez o problema não seja o que você posta — e sim o que você não enxerga.
+  </h1>
+
+  <p className="text-xl lg:text-2xl text-white/90 leading-relaxed drop-shadow-md">
+    A Cami analisa o seu perfil com inteligência artificial e estratégia para mostrar o que está travando seu crescimento e como resolver.
+  </p>
+</div>
 
             <Button variant="hero" size="lg" onClick={onCtaClick} className="text-lg px-8 py-4 h-auto shadow-glow hover:shadow-elegant transition-all duration-300 mt-8 relative z-20">
               Quero destravar meu perfil
